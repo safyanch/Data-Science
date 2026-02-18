@@ -1,0 +1,91 @@
+PANDAS – 1 HOUR LECTURE PLAN (BEGINNER FRIENDLY)
+
+Duration: 1 Hour Audience: Data Science / CS Beginners
+
+  ----------------------------------------
+  0–5 min: Introduction
+  ----------------------------------------
+  What is Pandas? - Python library for
+  data analysis - Works with tables (rows
+  & columns) - Built on NumPy
+
+  Why Pandas? - Easy data handling - Used
+  in ML & Data Science - Reads CSV, Excel,
+  databases
+
+  Key structures: - Series → 1 column -
+  DataFrame → full table
+  ----------------------------------------
+
+5–15 min: Creating Data
+
+import pandas as pd
+
+1.  Series s = pd.Series([10,20,30])
+
+2.  DataFrame from dictionary data = { “name”: [“Ali”,“Sara”,“John”],
+    “age”: [22,25,30] } df = pd.DataFrame(data)
+
+3.  From list data = [[1,“Ali”],[2,“Sara”]] pd.DataFrame(data,
+    columns=[“id”,“name”])
+
+Explain: Rows and columns Index
+
+  ----------------------------------------
+  15–25 min: Reading Files
+  ----------------------------------------
+  df = pd.read_csv(“data.csv”) df =
+  pd.read_excel(“data.xlsx”)
+
+  View data: df.head() df.tail() df.shape
+  df.columns df.info()
+
+  Explain: Real-world datasets
+  ----------------------------------------
+
+25–35 min: Selecting Data
+
+Column selection: df[“name”] df[[“name”,“age”]]
+
+Row selection: df.iloc[0] df.iloc[0:2]
+
+Condition: df[df[“age”] > 23]
+
+Add column: df[“salary”] = [500,600,700]
+
+  ----------------------------------------
+  35–45 min: Data Cleaning
+  ----------------------------------------
+  Missing values: df.isnull() df.dropna()
+  df.fillna(0)
+
+  Rename columns:
+  df.rename(columns={“age”:“Age”})
+
+  Change type: df[“age”] =
+  df[“age”].astype(int)
+  ----------------------------------------
+
+45–55 min: Basic Operations
+
+df.describe() df[“age”].mean() df[“age”].max()
+
+GroupBy: df.groupby(“name”).sum()
+
+Sort: df.sort_values(“age”)
+
+  ----------------------------------------
+  55–60 min: Quick Practice
+  ----------------------------------------
+  1. Create DataFrame 2. Select column 3.
+  Filter rows 4. Find mean 5. Add new
+  column
+
+  ----------------------------------------
+
+Key Takeaways
+
+Pandas = table handling Used in data analysis Important functions:
+read_csv() head() iloc groupby describe
+
+End of Lecture

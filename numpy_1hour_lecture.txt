@@ -1,0 +1,92 @@
+NUMPY – 1 HOUR LECTURE PLAN (BEGINNER FRIENDLY)
+
+Duration: 1 Hour Audience: Data Science / CS Beginners
+
+  ----------------------------------------
+  0–5 min: Introduction
+  ----------------------------------------
+  What is NumPy? - Library for numerical
+  computing - Faster than Python lists -
+  Used in ML, Data Science, AI
+
+  Why NumPy? - Fast calculations - Matrix
+  operations - Used in Pandas,
+  Scikit‑learn, TensorFlow
+  ----------------------------------------
+
+5–15 min: Creating Arrays
+
+import numpy as np
+
+1.  From list a = np.array([1,2,3]) b = np.array([[1,2,3],[4,5,6]])
+
+2.  Zeros np.zeros((3,3))
+
+3.  Ones np.ones((2,4))
+
+4.  Identity matrix np.eye(3)
+
+5.  Range np.arange(0,10) np.arange(1,10,2)
+
+6.  Linspace np.linspace(0,1,5)
+
+Explain: - Difference between list and array - Shape of matrix
+
+  ----------------------------------------
+  15–25 min: Shape and Reshape
+  ----------------------------------------
+  a = np.array([[1,2,3],[4,5,6]])
+
+  a.shape a.size a.ndim
+
+  Reshape: a = np.arange(1,10)
+  a.reshape(3,3)
+
+  Activity: Create 2x3 matrix Convert to
+  3x2
+  ----------------------------------------
+
+25–35 min: Indexing and Slicing
+
+a = np.array([[1,2,3], [4,5,6]])
+
+a[0] a[1,2] a[:,1] a[0:2]
+
+Explain rows vs columns.
+
+  ----------------------------------------
+  35–45 min: Mathematical Operations
+  ----------------------------------------
+  a + 5 a * 2 a + b a * b
+
+  Matrix multiplication: np.dot(a,b) a @ b
+
+  Transpose: a.T
+
+  Sum: np.sum(a) np.sum(a, axis=0)
+  np.sum(a, axis=1)
+
+  Mean: np.mean(a)
+  ----------------------------------------
+
+45–55 min: Random Numbers
+
+np.random.rand(3,3) np.random.randint(1,10,(2,3)) np.random.seed(0)
+
+Explain use in ML: - Random weights - Data generation
+
+  ----------------------------------------
+  55–60 min: Quick Practice
+  ----------------------------------------
+  1. Create 3x3 matrix 2. Find shape 3.
+  Multiply by 5 4. Find sum of rows 5.
+  Matrix multiplication
+
+  ----------------------------------------
+
+Key Takeaways
+
+NumPy array = fast matrix Used in ML and Data Science Important
+functions: np.array() shape reshape() dot() sum() mean() random
+
+End of Lecture
